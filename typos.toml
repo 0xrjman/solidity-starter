@@ -1,0 +1,6 @@
+
+[files]
+extend-exclude = ["lib"]
+
+[default.extend-words]
+# BAYC = BAYC

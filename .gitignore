@@ -1,0 +1,14 @@
+# IDE
+.vscode
+
+# foundry
+cache
+out
+
+# hardhat
+cache_hardhat
+artifacts
+typechain-types
+
+# pnpm
+node_modules
