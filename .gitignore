@@ -12,3 +12,6 @@ typechain-types
 
 # pnpm
 node_modules
+
+# localfile
+.env

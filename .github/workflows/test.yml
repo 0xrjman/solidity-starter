@@ -57,7 +57,7 @@ jobs:
 
       - name: Install Node dependencies
         run: |
-          pnpm ci
+          pnpm install
 
       - name: Run Hardhat tests
         run: |
