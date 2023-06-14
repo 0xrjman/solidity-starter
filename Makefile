@@ -3,7 +3,11 @@
 include .env
 export $(shell sed 's/=.*//' .env)
 
-TASK_NAME                := show:accounts
+TASK_NAME                					:= show:accounts
+
+.PHONY: submodules
+submodules:
+	git submodule update --init --recursive
 
 .PHONY: init
 init: submodules
@@ -14,10 +18,6 @@ init: submodules
 # [ -d lib/forge-std ] || forge install --no-commit --no-git https://github.com/foundry-rs/forge-std
 	npm install -g pnpm && pnpm install
 	forge install
-
-.PHONY: submodules
-submodules:
-	git submodule update --init --recursive
 
 .PHONY: build
 build:

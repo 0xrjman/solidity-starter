@@ -6,6 +6,7 @@ export default async function deployToken(
     const [account] = await hre.ethers.getSigners();
 
     console.log(`Deployer address: ${await account.getAddress()}`)
+    console.log(`Deploying ...`)
 
     const Token = await hre.ethers.getContractFactory("Token");
     const token = await Token.deploy("Hello I'm Token");

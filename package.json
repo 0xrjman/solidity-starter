@@ -1,6 +1,8 @@
 {
   "name": "solidity-starter",
   "version": "0.1.0",
+  "author": "0xrjman",
+  "license": "MIT",
   "description": "A starter project for building solidity smart contracts with foundry & hardhat",
   "directories": {
     "lib": "lib",
@@ -10,8 +12,6 @@
     "compile": "hardhat compile",
     "test": "hardhat test"
   },
-  "author": "0xrjman",
-  "license": "MIT",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.6",
     "@nomiclabs/hardhat-waffle": "^2.0.3",

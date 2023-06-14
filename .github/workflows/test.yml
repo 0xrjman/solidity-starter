@@ -6,9 +6,6 @@ on:
       - master
   pull_request:
 
-env:
-  FOUNDRY_PROFILE: ci
-
 jobs:
   foundry:
     strategy:
@@ -52,11 +49,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "18.x"
-          cache: "npm"
+          registry-url: https://registry.npmjs.org
 
       - name: Install pnpm package manager
         run: |
-          npm install -g pnpm
+          npm install -g pnpm && pnpm -v
 
       - name: Install Node dependencies
         run: |
@@ -66,3 +63,12 @@ jobs:
         run: |
           pnpm run test
         id: hardhat-test
+  typos:
+    name: Spell Check with Typos
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Check Typos
+        uses: crate-ci/typos@v1.12.12

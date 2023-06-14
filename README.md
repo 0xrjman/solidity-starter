@@ -1,9 +1,15 @@
-# Foundry & Hardhat Starter
+# Solidity Starter 🪭
 
-## Usage
+A `Foundry` &🌟& `Hardhat` compatible solidity starter
 
 TLDR;
 `cp .env.sample .env && make demo`
+
+## Demo
+
+[![asciicast](https://asciinema.org/a/591482.svg)](https://asciinema.org/a/591482)
+
+## Usage
 
 ```makefile
 # Step.0: essential
