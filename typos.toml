@@ -1,6 +1,6 @@
 
 [files]
-extend-exclude = ["lib"]
+extend-exclude = ["lib", "solidity-starter.cast"]
 
 [default.extend-words]
 # BAYC = BAYC
